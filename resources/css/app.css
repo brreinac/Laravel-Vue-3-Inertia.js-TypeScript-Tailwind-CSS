@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply bg-slate-50 dark:bg-slate-950; }
+  body { @apply min-h-screen; }
+  button, input, select, textarea { @apply focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950; }
+}
+
+@layer components {
+  .surface { @apply rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900; }
+  .page-title { @apply text-2xl font-bold tracking-tight text-slate-900 dark:text-white; }
+  .muted { @apply text-sm text-slate-500 dark:text-slate-400; }
+}
