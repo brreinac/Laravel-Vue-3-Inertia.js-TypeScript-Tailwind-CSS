@@ -14,8 +14,16 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('status', 20)->default('pendiente')->index();
             $table->string('priority', 20)->default('media')->index();
-            $table->foreignId('project_id')->constrained()->cascadeOnDelete()->index();
-            $table->foreignId('assigned_to')->nullable()->constrained('users')->nullOnDelete()->index();
+
+            $table->foreignId('project_id')
+                ->constrained('projects')
+                ->cascadeOnDelete();
+
+            $table->foreignId('assigned_to')
+                ->nullable()
+                ->constrained('users')
+                ->nullOnDelete();
+
             $table->date('due_date')->nullable()->index();
             $table->timestamp('completed_at')->nullable();
             $table->timestamps();
