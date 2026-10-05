@@ -21,6 +21,16 @@ Combina:
 
 ---
 
+# 0. Capturas de pantalla
+
+## Dashboard — modo oscuro
+
+![QVOX Task Manager - Dashboard modo oscuro](docs/screenshots/dashboard-dark.png)
+
+## Dashboard — modo claro
+
+![QVOX Task Manager - Dashboard modo claro](docs/screenshots/dashboard-light.png)
+
 ## 1. Arquitectura
 
 ### Backend
